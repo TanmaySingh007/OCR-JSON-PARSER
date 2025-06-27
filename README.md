@@ -19,7 +19,7 @@
 - **JSON** – Data serialization format
 ## 📸 Homepage Screenshot
 
-![Homepage]()
+![Homepage](https://github.com/TanmaySingh007/OCR-JSON-PARSER/blob/3547759f0a5861ab3de311b2a5fb8dcf726a20e2/OCR.png)
 
 ## 📂 Project Structure
 
