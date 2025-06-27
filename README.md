@@ -17,8 +17,9 @@
 - **OpenCV** – Image preprocessing and manipulation
 - **Pillow** – Image loading and processing
 - **JSON** – Data serialization format
+## 📸 Homepage Screenshot
 
-## Project Homepage Screenshot:{https://github.com/TanmaySingh007/OCR-JSON-PARSER/blob/545de0f139115e0e44b2cee763da2c7f3b772361/OCR.png}
+![Homepage]()
 
 ## 📂 Project Structure
 
