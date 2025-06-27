@@ -8,8 +8,7 @@
 
 ## 📸 Homepage Screenshot
 
-![Homepage](https://github.com/TanmaySingh007/OCR-JSON-PARSER/blob/main/assets/homepage.png)
-<!-- Make sure to upload the screenshot to your repo and update the path if necessary -->
+![Homepage](https://github.com/TanmaySingh007/OCR-JSON-PARSER/blob/4be3e84025272d0b1dfad6bfb1d9153b8d9808c0/OCR.png)
 
 ---
 
