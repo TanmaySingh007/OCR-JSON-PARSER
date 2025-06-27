@@ -1,95 +1,119 @@
-# 🧾 OCR-JSON-PARSER
+# 🧾 OCR-JSON-PARSER (Web App)
 
-**OCR-JSON-PARSER** is a Python-based utility that extracts text from images using Optical Character Recognition (OCR) and converts the extracted data into structured **JSON format**. It is ideal for automating data extraction workflows where input is image-based (e.g., scanned documents, receipts, forms).
+**OCR-JSON-PARSER** is a web-based tool that allows users to upload images (like receipts, forms, invoices), extract text using Optical Character Recognition (OCR), and instantly convert that text into structured **JSON format** — all through a clean and responsive UI.
 
-## 📌 Features
+🌐 **Live Demo**: [https://ocr-json-parser007.netlify.app/](https://ocr-json-parser007.netlify.app/)
 
-- 🔍 Image-to-text conversion using **Tesseract OCR**
-- 🧠 Intelligent preprocessing for improved recognition accuracy
-- 📤 Outputs extracted data as clean, structured **JSON**
-- 🖼️ Supports JPEG, PNG, and other image formats
-- 💡 Easily extendable for custom parsing rules
+---
+
+## 📸 Homepage Screenshot
+
+![Homepage](https://github.com/TanmaySingh007/OCR-JSON-PARSER/blob/main/assets/homepage.png)
+<!-- Make sure to upload the screenshot to your repo and update the path if necessary -->
+
+---
+
+## 🚀 Features
+
+- 🖼️ Upload images (JPG, PNG, etc.) via drag-and-drop or file selector
+- 🔍 Extracts text using built-in OCR (via backend or frontend OCR engine)
+- 📤 Converts and displays output in structured **JSON**
+- 💾 Download the JSON output as a file
+- ⚡ Fast, responsive UI built with modern frontend technologies
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Python 3**
-- **pytesseract** – Python wrapper for Tesseract OCR
-- **OpenCV** – Image preprocessing and manipulation
-- **Pillow** – Image loading and processing
-- **JSON** – Data serialization format
-## 📸 Homepage Screenshot
+- **React.js** (Frontend)
+- **TailwindCSS** (UI styling)
+- **Tesseract.js** or API-driven OCR backend
+- **Netlify** (Deployment)
 
-![Homepage](https://github.com/TanmaySingh007/OCR-JSON-PARSER/blob/3547759f0a5861ab3de311b2a5fb8dcf726a20e2/OCR.png)
+---
 
 ## 📂 Project Structure
 
 ```
 OCR-JSON-PARSER/
-├── main.py              # Entry point for parsing and processing
-├── ocr_utils.py         # OCR and image preprocessing functions
-├── parser.py            # Logic to convert raw text into structured JSON
-├── test_images/         # Sample input images for testing
-├── output/              # Output directory for generated JSON files
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
+├── public/               # Static assets
+├── src/
+│   ├── components/       # React components
+│   ├── pages/            # Page views
+│   ├── utils/            # Helper functions
+│   └── App.tsx           # Main app wrapper
+├── tailwind.config.js    # Tailwind configuration
+├── vite.config.ts        # Vite config (if using Vite)
+├── package.json          # Project metadata & scripts
+└── README.md             # Project documentation
 ```
 
-## 🧑‍💻 Getting Started
+---
+
+## 🧑‍💻 Getting Started Locally
 
 ### Prerequisites
 
-- Python 3.7 or higher
-- Tesseract OCR installed and added to system PATH  
-  (Download from: https://github.com/tesseract-ocr/tesseract)
+- Node.js (v18+)
+- npm or yarn
 
 ### Installation
-
-1. Clone the repository:
 
 ```bash
 git clone https://github.com/TanmaySingh007/OCR-JSON-PARSER.git
 cd OCR-JSON-PARSER
+npm install
 ```
 
-2. Install Python dependencies:
+### Run the development server
 
 ```bash
-pip install -r requirements.txt
+npm run dev
+# or
+yarn dev
 ```
 
-3. Run the parser:
+Visit `http://localhost:5173` to view it locally.
 
-```bash
-python main.py --input ./test_images/sample1.png --output ./output/result.json
-```
+---
 
-> Make sure to update the input/output paths as needed.
+## 🌐 Live Demo
 
-## 📤 Output Format
+Try the hosted version here:  
+🔗 [https://ocr-json-parser007.netlify.app/](https://ocr-json-parser007.netlify.app/)
 
-The output JSON is structured with key-value pairs derived from the OCR results. Sample:
+---
+
+## 📤 Sample Output Format
 
 ```json
 {
-  "Date": "2024-06-27",
-  "Invoice Number": "INV123456",
-  "Total": "$250.00",
-  "Vendor": "Example Company Ltd."
+  "Name": "John Doe",
+  "Date": "2025-06-27",
+  "Total Amount": "$245.00",
+  "Invoice Number": "INV-8891"
 }
 ```
 
-> Output structure may vary based on the layout and content of the input image.
+> Note: The structure of the JSON depends on the layout and content of the uploaded image.
 
-## 🧪 Sample Use Cases
+---
 
-- Automated invoice data extraction
-- Document digitization for archival
-- Form scanning and digitized storage
-- Preprocessing for AI/ML workflows
+## 🧪 Use Cases
+
+- Scanned invoice or bill parser
+- Form digitization for structured storage
+- Automating data entry from physical documents
+- Preprocessing for database uploads or analytics pipelines
+
+---
 
 ## 🙌 Contribution
 
-Feel free to fork the repo, raise issues, or submit pull requests for enhancements or bug fixes!
+Contributions are welcome!  
+If you have ideas for improvements or find bugs, feel free to open issues or submit pull requests.
+
+---
 
 ## 📄 License
 
