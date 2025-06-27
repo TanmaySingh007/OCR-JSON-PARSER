@@ -1,89 +1,99 @@
-# Welcome to your OCR-JSON-PARSER project
+# 🧾 OCR-JSON-PARSER
 
-A clean, modern React template with TypeScript, Vite, TailwindCSS, and ShadCN UI components. This template provides a solid foundation for building web applications with best practices in mind.
+**OCR-JSON-PARSER** is a Python-based utility that extracts text from images using Optical Character Recognition (OCR) and converts the extracted data into structured **JSON format**. It is ideal for automating data extraction workflows where input is image-based (e.g., scanned documents, receipts, forms).
 
-## Tech Features
+## 📌 Features
 
-- ⚡️ **Vite** - Lightning fast build tool
-- 🔥 **React 18** - Latest React features
-- 🧩 **TypeScript** - Type safety for better developer experience
-- 🎨 **TailwindCSS** - Utility-first CSS framework
-- 🧰 **ShadCN UI** - Accessible and customizable UI components
-- 📱 **Responsive Design** - Mobile-first approach
-- 🧭 **React Router** - Easy client-side routing
-- 🔄 **React Query** - Data fetching and state management
-- 🧪 **Form Handling** - React Hook Form with Zod validation
+- 🔍 Image-to-text conversion using **Tesseract OCR**
+- 🧠 Intelligent preprocessing for improved recognition accuracy
+- 📤 Outputs extracted data as clean, structured **JSON**
+- 🖼️ Supports JPEG, PNG, and other image formats
+- 💡 Easily extendable for custom parsing rules
 
-## Getting Started
+## 🛠️ Tech Stack
+
+- **Python 3**
+- **pytesseract** – Python wrapper for Tesseract OCR
+- **OpenCV** – Image preprocessing and manipulation
+- **Pillow** – Image loading and processing
+- **JSON** – Data serialization format
+
+## Project Homepage Screenshot:{}
+
+## 📂 Project Structure
+
+```
+OCR-JSON-PARSER/
+├── main.py              # Entry point for parsing and processing
+├── ocr_utils.py         # OCR and image preprocessing functions
+├── parser.py            # Logic to convert raw text into structured JSON
+├── test_images/         # Sample input images for testing
+├── output/              # Output directory for generated JSON files
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+```
+
+## 🧑‍💻 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn or pnpm
+- Python 3.7 or higher
+- Tesseract OCR installed and added to system PATH  
+  (Download from: https://github.com/tesseract-ocr/tesseract)
 
 ### Installation
 
-1. Clone this repository:
-```bash
-git clone https://github.com/your-username/react-template-project.git
-cd react-template-project
-```
-
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn
-# or
-pnpm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-4. Open your browser and visit `http://localhost:5173`
-
-## Project Structure
-
-```
-react-template-project/
-├── public/              # Static assets
-│   ├── components/      # Reusable components
-│   │   └── ui/          # UI components from ShadCN
-│   ├── hooks/           # Custom React hooks
-│   ├── lib/             # Utility functions and libraries
-│   ├── pages/           # Page components
-│   ├── App.tsx          # Main application component
-│   ├── index.css        # Global styles
-│   └── main.tsx         # Application entry point
-├── .gitignore
-├── package.json         # Project dependencies and scripts
-├── tailwind.config.ts   # TailwindCSS configuration
-├── tsconfig.json        # TypeScript configuration
-└── vite.config.ts       # Vite configuration
-```
-
-## Customization
-
-- **Styling**: Modify `tailwind.config.ts` to customize your design tokens
-- **Components**: Add or modify components in the `src/components` directory
-- **Pages**: Create new pages in the `src/pages` directory
-- **Routing**: Update routes in `src/App.tsx`
-
-## Building for Production
+1. Clone the repository:
 
 ```bash
-npm run build
-# or
-yarn build
-# or
-pnpm build
+git clone https://github.com/TanmaySingh007/OCR-JSON-PARSER.git
+cd OCR-JSON-PARSER
 ```
 
-The built files will be in the `dist` directory, ready to be deployed.
+2. Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the parser:
+
+```bash
+python main.py --input ./test_images/sample1.png --output ./output/result.json
+```
+
+> Make sure to update the input/output paths as needed.
+
+## 📤 Output Format
+
+The output JSON is structured with key-value pairs derived from the OCR results. Sample:
+
+```json
+{
+  "Date": "2024-06-27",
+  "Invoice Number": "INV123456",
+  "Total": "$250.00",
+  "Vendor": "Example Company Ltd."
+}
+```
+
+> Output structure may vary based on the layout and content of the input image.
+
+## 🧪 Sample Use Cases
+
+- Automated invoice data extraction
+- Document digitization for archival
+- Form scanning and digitized storage
+- Preprocessing for AI/ML workflows
+
+## 🙌 Contribution
+
+Feel free to fork the repo, raise issues, or submit pull requests for enhancements or bug fixes!
+
+## 📄 License
+
+This project is licensed under the MIT License. 
+
+---
+
+> Built with 🧠 by [Tanmay Singh](https://www.linkedin.com/in/tanmay-singh-228097272/)
