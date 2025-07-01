@@ -86,12 +86,6 @@ Upload any image or PDF file and instantly get the JSON output.
 
 ---
 
-## 🌟 Unique Description
-
-**OCR-JSON-PARSER** is a browser-based document-to-JSON converter powered by **Tesseract.js** and **TypeScript**. Unlike most OCR tools that rely on cloud APIs or backend servers, this tool runs entirely in your browser—preserving privacy while offering fast, structured data output.
-
-Designed for developers, analysts, and educators, the tool simplifies the process of transforming image-based content into clean, machine-readable JSON, making it ideal for data ingestion, ETL pipelines, or frontend-only OCR prototyping.
-
 No installations. No data leaks. Just upload, extract, and go.
 
 ---
