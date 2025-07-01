@@ -1,0 +1,1 @@
+// HistorySection.tsx - Component placeholder

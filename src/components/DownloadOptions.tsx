@@ -1,0 +1,1 @@
+// DownloadOptions.tsx - Component placeholder
